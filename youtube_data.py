@@ -98,15 +98,3 @@ def get_comments_in_videos(youtube, videos_ids):
             print("Could not get comments for video " + video_id)
 
     return pd.DataFrame(all_comments)
-
-
-channel_stats = get_channel_stats(youtube, channels_ids)
-# iJoXTdV6C5I
-ids = "UUJQJAI7IjbLcpsjWdSzYz0Q"
-channels_ids = get_videos_ids(youtube, ids)
-
-channels_comments = get_comments_in_videos(youtube, ids)
-
-print(channels_comments)
-print(channel_stats)
-print(channels_ids)
